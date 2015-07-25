@@ -27,8 +27,8 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   -o-background-size: cover;
   background-size: cover;
   
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bay-area.jpg', sizingMethod='scale')";
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bay-area.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Space.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Space.jpg', sizingMethod='scale');
   
   margin-bottom: 0px;
   padding: 0px;
@@ -302,17 +302,31 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 
 @media (max-width: 767px) { 
   .jumbotron:before {
-    bottom: 100px;
-    left: 20px;
-    right: 20px;
-    top: 20px;    
+      background: no-repeat center right fixed url(../images/Space.jpg);
+
+  -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bay-area.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bay-area.jpg', sizingMethod='scale');
+  
+  margin-bottom: 0px;
+  padding: 0px;
+  height:100%;   
   }
   .jumbotron .container { top: 20%; padding-top: 0px; }
   .jumbotron .scroll-down { width: 100%; right: 0px; }
   
   .navbar  { top: 0px; width: 100%; }
   .navbar .nav > li { height: 60px; }
-  .navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+  .navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; font-size: 9px;}
   
   .fixed .navbar { top: 0px; }
   
@@ -322,6 +336,9 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   
   #contact { padding-bottom: 60px; }
   #contact a .icon { float: left; margin-right: 10px; }
+
+  #abilities ul > li .ability-title { display: inline-block; width: 60%; padding-top: 4px;padding-right: 50px;}
+  #abilities ul > li .ability-score {  position: absolute; left: 50%; }
 }    
 
 @media only screen and (orientation: portrait) and (max-width: 767px)  {
