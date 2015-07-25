@@ -1,0 +1,91 @@
+var stickyNav;
+
+$(document).ready(function(){
+
+	applyPreloader();
+	applyHeader();
+	applyNavigation(); 
+	applyMailTo();
+	applyResize();
+	checkHash();
+});
+
+/* Preloader Function */
+function applyPreloader() {
+	setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 1500);
+}
+
+/* Header Function */
+function applyHeader() {
+	$('.jumbotron').css({ height: ($(window).height()) +'px' });
+}	
+
+/* Navigation Functions */
+function applyNavigation() {
+	forClicking();
+	scrollSpy();
+	stickyNavigation();
+}
+
+function forClicking(){
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+
+		if( $( $.attr(this, 'href') ).length > 0 ) {
+			$('html, body').animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 400);
+		}
+
+		return false;
+	});
+}
+
+function scrollSpy() {
+	$('#navbar').on('activate.bs.scrollspy', function() {
+		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+	});
+}
+
+function stickyNavigation() {
+	stickyNav = $('.scroll-down').offset().top + 20;
+	$(window).on('scroll', function() {  
+		stickyNavigation();  
+	});  
+	stickyNavigation();
+}
+
+function stickyNavigation() {         
+	if($(window).scrollTop() > stickyNav) {   
+		$('body').addClass('fixed');  
+	} else {  
+		$('body').removeClass('fixed');   
+	}  
+}
+
+/* MAILTO FUNCTION */
+function applyMailTo(){
+	$('a[href*=mailto]').on('click', function(e) {
+		var lstrEmail = $(this).attr('href').replace('mailto:', '');
+		lstrEmail = lstrEmail.split('').reverse().join('')
+		$(this).attr('href', 'mailto:' + lstrEmail);
+	});
+}
+
+/* RESIZE FUNCTION */
+function applyResize() {
+	$(window).on('resize', function() {  
+		stickyNav = $('.scroll-down').offset().top + 20;
+		$('.jumbotron').css({ height: ($(window).height()) +'px' });
+	}); 
+}
+
+/* HASH FUNCTION */
+function checkHash() {
+	lstrHash = window.location.hash.replace('#/', '#');
+	if($('a[href='+ lstrHash +']').length > 0) {
+		$('a[href='+ lstrHash +']').trigger('click');
+	}
+}
