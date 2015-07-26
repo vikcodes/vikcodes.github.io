@@ -302,7 +302,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 
 @media (max-width: 767px) { 
   .jumbotron:before {
-      background: no-repeat center right fixed url(../images/Space.jpg);
+      background: no-repeat center right relative url(../images/Space.jpg);
 
   -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
@@ -321,7 +321,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   padding: 0px;
   height:100%;   
   }
-  .jumbotron .container { top: 20%; padding-top: 0px; }
+  .jumbotron .container { top: 28%; padding-top: 0px; }
   .jumbotron .scroll-down { width: 100%; right: 0px; }
   
   .navbar  { top: 0px; width: 100%; height: 110px;}
