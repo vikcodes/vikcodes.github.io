@@ -1,10 +1,10 @@
-html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+html, body { color: #434242; font-family: 'Droid Sans', sans-serif !important; height: 100%; }
 body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
 
-h1, h2, h3, .h1, .h2, .h3, strong, b { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px;position: center; }
+h1, h3, .h1, .h2, .h3, strong, b { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px;position: center; }
 h1 { font-weight: 700; margin-bottom: 10px; }
 h2,h3 { font-weight: 300; color: #22A39F; }
-h2 { font-size: 54px; text-align: center; padding-top: 60px;}
+h2 { font-size: 54px; text-align: center; padding-top: 60px;font-family: 'Droid Sans'}
 h3 { font-size: 28px; }
 
 p.lead { text-align: center; color: #727878; }
@@ -14,6 +14,9 @@ p.lead a:hover { text-decoration: none; }
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
 
+/*-------------------*/
+/***** JUMBOTRON *****/
+/*-------------------*/
 .jumbotron {
   background: no-repeat center right fixed url(../images/Space.jpg);
 
@@ -40,9 +43,10 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .jumbotron .container > * { text-align: center; color: #FFFFFF; }
 .jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
 .jumbotron .container .lead { font-size: 28px; }
-.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6;}
+.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 45%; background-color: transparent; text-align: center; z-index: 6;}
 
-/* arrow bounce*/
+/* Arrow Bounce*/
+
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -110,6 +114,9 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   animation: bounce 2s infinite;
 }
 
+/*--------------------*/
+/***** PRE LOADER *****/
+/*--------------------*/
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -240,6 +247,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 /*Navbar functionality */
+
 .navbar  { background-color: #222222; position: fixed; height: 50px; top: 0px; width:100%; z-index: 999}
 .navbar .navbar-nav { float: none; }
 .navbar-nav { margin: 0px; }
@@ -251,9 +259,13 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .background-white { background: #FFFFFF; }
 .background-gray { background: #434242; }
 
+/*---------------*/
+/***** PROFILE *****/
+/*---------------*/
 #description {
   padding-top: 30px; 
   text-align: center;
+  font-family: 'Droid Sans';
 }
 
 #profile .row > div { margin-bottom: 20px; }
@@ -340,20 +352,6 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   #abilities ul > li .ability-title { display: inline-block; width: 60%; padding-top: 4px;padding-right: 50px;}
   #abilities ul > li .ability-score {  position: absolute; left: 50%; }
 }    
-
-@keyframes wiggle {
-  0% {
-    padding-top: 20px;
-  }
-
-  50% {
-    padding-top: 28px;
-  }
-
-  100% {
-    padding-top: 20px;
-  }
-}
 
 
 /*---------------*/

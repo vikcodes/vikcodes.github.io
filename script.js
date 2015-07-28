@@ -3,6 +3,7 @@ var stickyNav;
 $(document).ready(function(){
 
 	applyPreloader();
+	randomFeature();
 	applyHeader();
 	applyNavigation(); 
 	applyMailTo();
@@ -15,6 +16,17 @@ function applyPreloader() {
 	setTimeout(function(){
         $('body').addClass('loaded');
     }, 1500);
+}
+
+function randomFeature() {
+	features = ['Student, Programmer, Innovator',
+				'The Second Most Interesting Man In The World',
+				];
+	max = features.length;
+	i = Math.floor(Math.random() * max);
+	result = features[i];
+
+	$('#headline').text(result);
 }
 
 /* Header Function */
@@ -65,7 +77,7 @@ function stickyNavigation() {
 	}  
 }
 
-/* MAILTO FUNCTION */
+/* Mail To Function */
 function applyMailTo(){
 	$('a[href*=mailto]').on('click', function(e) {
 		var lstrEmail = $(this).attr('href').replace('mailto:', '');
@@ -74,7 +86,7 @@ function applyMailTo(){
 	});
 }
 
-/* RESIZE FUNCTION */
+/* Resize Function */
 function applyResize() {
 	$(window).on('resize', function() {  
 		stickyNav = $('.scroll-down').offset().top + 20;
@@ -82,7 +94,7 @@ function applyResize() {
 	}); 
 }
 
-/* HASH FUNCTION */
+/* Hash Function */
 function checkHash() {
 	lstrHash = window.location.hash.replace('#/', '#');
 	if($('a[href='+ lstrHash +']').length > 0) {
