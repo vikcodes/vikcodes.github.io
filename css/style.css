@@ -351,7 +351,13 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 
   #abilities ul > li .ability-title { display: inline-block; width: 60%; padding-top: 4px;padding-right: 50px;}
   #abilities ul > li .ability-score {  position: absolute; left: 50%; }
-}    
+}   
+
+@media (min-width:1650px) {
+  #ability-frame {
+    margin-left: -150px;
+  }
+}
 
 
 /*---------------*/
