@@ -12,10 +12,10 @@
 		<meta name="keywords" content="Vikram Sreedhar, Stanford, Resume, Computer Science, Web developer, Startup, Programmer" />
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../My_Website/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="../My_Website/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	</head>
@@ -32,10 +32,18 @@
   		</div>
 
   		<!-- Initial background image -->
-  		<div id="top" class="jumbotron" data-src="../images/Space.jpg" data-position="center right">
+  		<div id="top" class="jumbotron" data-src="../My_Website/images/Space.jpg" data-position="center right">
   			<div class="container">
   				<h1>Vikram Sreedhar</h1>
-  				<p class="lead" id="headline">Student, Programmer, Innovator</p>
+  				<div class="icon-cards">
+  <div class="icon-cards__content">
+  	<center>
+    <div class="icon-cards__item">Student, Programmer, Innovator</div>
+    <div class="icon-cards__item">The Second Most Interesting Man In The World</div>
+    <div class="icon-cards__item">Coder, Visionary, Entrepreneur</div>
+</center>
+  </div>
+</div>
   			</div>
 
   			<div class="overlay"></div>
@@ -131,7 +139,7 @@
 						<div class="col-md-6">
 							<ul class="no-bullets">
 
-								<li>
+								<li class="collapse-group"  data-target="#css">
 									<span class="ability-title">CSS</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -140,20 +148,22 @@
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="css">I have extensive experience with CSS from creating several websites. I know how to create animated objects using CSS, configure the CSS for different resolutions, and create easy-to-use stylesheets for other programmers to utilize.  </span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#html">
 									<span class="ability-title">HTML</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star fa-2x"></i>	
-										<i class="fa fa-star-o fa-2x"></i>
+										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="html">I know how to build clean HTML code for websites and I understand what classes and IDs are appropriate for javascript developers to use when manipulating my HTML code.  </span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#json">
 									<span class="ability-title">JSON</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -162,20 +172,22 @@
 										<i class="fa fa-star-o fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="json">I have used JSON objects in multiple web development projects and I know how to effectively stringify or parse a JSON object. </span>
 								</li>			
 
-								<li>
+								<li class="collapse-group"  data-target="#bootstrap">
 									<span class="ability-title">Bootstrap Framework</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
 										<i class="fa fa-star fa-2x"></i>	
 										<i class="fa fa-star fa-2x"></i>	
 										<i class="fa fa-star fa-2x"></i>
-										<i class="fa fa-star-o fa-2x"></i>
+										<i class="fa fa-star fa-2x"></i>
 									</span>
+									<span class="collapse" id="bootstrap">I am very proficient with Bootstrap and have used this framework to develop several responsive, mobile projects on the web. I have used almost all of the custom HTML and CSS components, and jQuery plugins while building websites.</span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#command">
 									<span class="ability-title">Command line</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -184,9 +196,10 @@
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="command">I have taken a class taught in Unix at Stanford University. I utilized the command line frequently while doing research for the Mechanical Engineering Department at Stanford during the summer of 2015. </span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#jquery">
 									<span class="ability-title">JQuery</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -195,9 +208,10 @@
 										<i class="fa fa-star-o fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="jquery">I use Jquery in all my websites to make them more efficent and organized. I’ve utilized jQuery syntax and commands for HTML document traversal and manipulation, event handling, animation, and Ajax requests.</span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#java">
 									<span class="ability-title">Java</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -206,9 +220,10 @@
 										<i class="fa fa-star-o fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="java">I took a class called CS106A at Stanford University that taught programming methodology in Java. I learned about the basics of an object oriented language and created several applications/games such as Brick Breaker, Hangman, and a basic version of Facebook. </span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#javascript">
 									<span class="ability-title">Javascript</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -217,6 +232,7 @@
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="javascript">I took a class called CS42 at Stanford University that taught Javascript. I have created several websites using Javascript code such as <a href='http://www.cafeephata.com'>cafeephata.com</a> and this website. </span>
 								</li>
 
 							</ul>
@@ -224,7 +240,7 @@
 						<div class="col-md-6">
 							<ul class="no-bullets">
 
-								<li>
+								<li class="collapse-group"  data-target="#Cplus">
 									<span class="ability-title">C++</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -233,9 +249,10 @@
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="Cplus">I took a class called CS106B at Stanford University that taught me the fundamentals of C++. I have built several programs using C++ such as a graph visualizer, priority queue, and Boggle. </span>
 								</li>
 
-								<li>
+								<li class="collapse-group"  data-target="#python">
 									<span class="ability-title">Python</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -244,11 +261,22 @@
 										<i class="fa fa-star-o fa-2x"></i>
 										<i class="fa fa-star-o fa-2x"></i>
 									</span>
+									<span class="collapse" id="python"> I taught myself Python while in high school and have used it primarily in my research for the Mechanical Engineering Department at Standford University. I have created Python scripts and modules in order to perform computer simulations and graph the data from the simulations. </span>
 								</li>
 
+								<li class="collapse-group"  data-target="#php">
+									<span class="ability-title">Php</span>
+									<span class="ability-score">
+										<i class="fa fa-star fa-2x"></i>	
+										<i class="fa fa-star fa-2x"></i>	
+										<i class="fa fa-star fa-2x"></i>	
+										<i class="fa fa-star-o fa-2x"></i>
+										<i class="fa fa-star-o fa-2x"></i>
+									</span>
+									<span class="collapse" id="php"> I've worked with Php in order to create email subscription forms that can store data in a MySQL database.  I taught myself how to use phpmyadmin and integrate php script files with html and javascript code. </span>
+								</li>
 
-
-								<li>
+								<li class="collapse-group"  data-target="#mdplus">
 									<span class="ability-title">MD++</span>
 									<span class="ability-score">
 										<i class="fa fa-star fa-2x"></i>	
@@ -257,6 +285,7 @@
 										<i class="fa fa-star fa-2x"></i>
 										<i class="fa fa-star fa-2x"></i>
 									</span>
+									<span class="collapse" id="mdplus">I learned MD++, a C++ package made by Professor Wei Cai at Stanford University, for my research in molecular dynamics. I have used it to create polymer melt simulations in order to analyze the mean square distance between monomers and how the double bridging algorithm can shorten the number of timesteps a simulation can take. </span>
 								</li>
 
 							</ul>
@@ -337,7 +366,7 @@
 
 			<!-- Script Tags -->
 			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-			<script src="../script.js" type="text/javascript"></script>
+			<script src="../My_Website/script.js" type="text/javascript"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 			<script type="text/javascript">
     (function (n) {

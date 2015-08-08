@@ -20,13 +20,24 @@ function applyPreloader() {
 
 function randomFeature() {
 	features = ['Student, Programmer, Innovator',
-				'The Second Most Interesting Man In The World',
+				'The Second Most Interesting Man In The World'
 				];
 	max = features.length;
 	i = Math.floor(Math.random() * max);
 	result = features[i];
 
 	$('#headline').text(result);
+
+	$('.collapse-group').on('click', function() {
+		if($(this).children('.collapse').hasClass('in')) {
+			$(this).children('.in').removeClass('in');
+		} else {
+			$('.in').removeClass('in');
+			$(this).children('.collapse').addClass('in');
+		}
+
+});
+
 }
 
 /* Header Function */
