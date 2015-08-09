@@ -97,15 +97,19 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 @-webkit-keyframes carousel {
   0%, 17.5% {
+    -webkit-transform: translateZ(-2rem) rotateX(0);
     transform: translateZ(-2rem) rotateX(0);
   }
   27.5%, 45% {
+    -webkit-transform: translateZ(-2rem) rotateX(-120deg);
     transform: translateZ(-2rem) rotateX(-120deg);
   }
   55%, 72.5% {
+    -webkit-transform: translateZ(-2rem) rotateX(-240deg);
     transform: translateZ(-2rem) rotateX(-240deg);
   }
   82.5%, 100% {
+    -webkit-transform: translateZ(-2rem) rotateX(-360deg);
     transform: translateZ(-2rem) rotateX(-360deg);
   }
 }
@@ -125,15 +129,19 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 @keyframes carousel {
   0%, 17.5% {
+    -webkit-transform: translateZ(-2rem) rotateX(0);
     transform: translateZ(-2rem) rotateX(0);
   }
   27.5%, 45% {
+    -webkit-transform: translateZ(-2rem) rotateX(-120deg);
     transform: translateZ(-2rem) rotateX(-120deg);
   }
   55%, 72.5% {
+    -webkit-transform: translateZ(-2rem) rotateX(-240deg);
     transform: translateZ(-2rem) rotateX(-240deg);
   }
   82.5%, 100% {
+    -webkit-transform: translateZ(-2rem) rotateX(-360deg);
     transform: translateZ(-2rem) rotateX(-360deg);
   }
 }
