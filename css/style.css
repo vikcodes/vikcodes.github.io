@@ -53,14 +53,18 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   height: 2rem;
   margin: 0 auto;
   perspective: 2rem;
+  -webkit-perspective: 2rem;
 }
 .icon-cards__content {
   position: absolute;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform: translateZ(-2rem) rotateX(0);
+  -webkit-transform: translateZ(-2rem) rotateX(0);
   animation: carousel 30s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  -webkit-animation: carousel 30s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
 }
 .icon-cards__item {
   text-align: center;
@@ -71,15 +75,19 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   height: 2rem;
   font-size: 2rem;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .icon-cards__item:nth-child(1) {
   transform: rotateX(0) translateZ(2rem);
+  -webkit-transform: rotateX(0) translateZ(2rem);
 }
 .icon-cards__item:nth-child(2) {
   transform: rotateX(120deg) translateZ(2rem);
+  -webkit-transform: rotateX(120deg) translateZ(2rem);
 }
 .icon-cards__item:nth-child(3) {
   transform: rotateX(240deg) translateZ(2rem);
+  -webkit-transform: rotateX(240deg) translateZ(2rem);
 }
 @-moz-keyframes carousel {
   0%, 17.5% {
